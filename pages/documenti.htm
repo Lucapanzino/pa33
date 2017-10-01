@@ -1,0 +1,51 @@
+title = "documenti"
+url = "/documenti"
+layout = "default"
+is_hidden = 0
+==
+
+<main>
+             
+            <!-- Sections -->
+            <section id="business" class="portfolio sections">
+                <div class="container">
+                    <div class="head_title text-center">
+                        <h1>DOCUMENTI</h1>
+                        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="portfolio-wrapper text-center">
+                            {% for i in 0..10 %}
+                            <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="community-edition">
+                                    <i class="fa fa-file-text"></i>
+                                    <div class="separator"></div>
+                                    <h4>Community Edition</h4>
+                                    <p>Visually explore your data through a free-form drag-and-drop canvas, a broad range of modern data visualizations, and an easy-to-use report authoring experience.</p>
+                                    <div class="separator separator-long"></div>
+                                    <div class="doc-icons clearfix">
+                                        <i class="fa fa-comments-o" aria-hidden="true">
+                                            <span>12</span>
+                                        </i>
+                                        <i class="fa fa-calendar" aria-hidden="true">
+                                            <span>21/07/2017</span>
+                                        </i>
+                                    </div>
+
+                                </div>
+                            </div>
+                            {% endfor %}
+                              
+                        </div>
+                        <div class="col-xs-12 text-center">
+                            <button type="button" class="btn btn-altro center-block">Visualizza altro</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- /container -->
+            </section>
+
+        </main>

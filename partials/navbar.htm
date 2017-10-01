@@ -1,0 +1,76 @@
+<div class=" nav-container">
+            <nav class="navbar navbar-default navbar-sticky">
+                <div class="container  clearfix">
+
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"><img src="{{'assets/images/pa33_logo_small.png'|theme}}" alt="Logo"/></a>
+                    </div>
+
+                    <div id="bs-example-navbar-collapse-1" class="navbar-collapse collapse">
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="{{'homepage'|page(false)}}">Home</a>
+                            </li>
+                            <li>
+                                <a href="{{'regioni'|page(false)}}">Regioni</a>
+                            </li>
+                            <li>
+                                <a href="{{'documenti'|page(false)}}">Documenti</a>
+                            </li>
+                            <li>
+                                <a href="{{'contatti'|page(false)}}">Contatti</a>
+                            </li>
+                            <li >
+                                <a href="{{'login'|page(false)}}">Accedi</a>
+                            </li>
+                            <li >
+                                <a href="{{'signup'|page(false)}}">Registrati</a>
+                            </li>
+                            <li class="dropdown header-dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="glyphicon glyphicon-user"></i>
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="{{'modifica-profilo'|page(false)}}">Modifica profilo</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{'lista-interventi'|page(false)}}">I miei interventi</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{'domiciliazioni'|page(false)}}">Domiciliazioni
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li>
+                                        <a href="#">Logout</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <!--/.nav-collapse -->
+                    <div class="search-form">
+                        <form class="navbar-form" action="/search" method="GET">
+                            <div class="form-group">
+                                <input value="" type="text" class="form-control form-control-search-el" placeholder="Cerca PA" name="term">
+                                <div class=" form-control-submit-el">
+                                    <input class="form-control-submit-image-el" type="image" onclick="this.form.submit()" src="https://democracy.entopanlab.it/themes/pa33/assets/images/button-search.png" name="submit" alt="Cerca PA">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
