@@ -69,24 +69,7 @@ is_hidden = 0
                     <div class="row">
                         <div class="portfolio-wrapper text-center">
                             {% for i in 0..7 %}
-                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                <div class="community-edition">
-                                    <i class="fa fa-file-text"></i>
-                                    <div class="separator"></div>
-                                    <h4>Community Edition</h4>
-                                    <p>Visually explore your data through a free-form drag-and-drop canvas, a broad range of modern data visualizations, and an easy-to-use report authoring experience.</p>
-                                    <div class="separator separator-long"></div>
-                                    <div class="doc-icons clearfix">
-                                        <i class="fa fa-comments-o" aria-hidden="true">
-                                            <span>12</span>
-                                        </i>
-                                        <i class="fa fa-calendar" aria-hidden="true">
-                                            <span>21/07/2017</span>
-                                        </i>
-                                    </div>
-
-                                </div>
-                            </div>
+                                {% partial 'documentoBox/default' %}
                             {% endfor %}
                               
                         </div>
