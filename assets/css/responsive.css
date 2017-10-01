@@ -23,9 +23,9 @@
 }
 .search-form {
     /*margin-top: 10px; */
-    transform: scale(.65);
+    /*transform: scale(.65);
     right: 0;
-    top: 10px;
+    top: 10px;*/
 }
 }
 /* Portrait tablets and small desktops */
@@ -34,7 +34,7 @@
         font-size: 80%;
     }
 	.home-content h1 {
-    font-size: 36px;
+    font-size: 36px!important;
 	}
    .heading-content h1 {
     font-size: 45px;
@@ -49,12 +49,7 @@
     float:none;
 	}
     .home-wrapper {
-    overflow: initial;
-}
-.search-form {
-    margin-top: 70px;
-   width: 100vw;
-   text-align: center;
+    padding: 90px 0px!important; 
 }
 .sections {
     padding-top: 50px;
@@ -67,10 +62,7 @@
     html {
         font-size: 70%;
     }
-    .search-form {
-        margin-left: -15px;
-        margin-top: 45px;
-    }
+     
 	/*.home-content h1 {
     font-size: 22px;
 	}*/
@@ -96,24 +88,7 @@
     .home-wrapper {
     overflow: initial;
 }
-#bs-example-navbar-collapse-1 {
-    position: absolute;
-    z-index: 99999999;
-    top: 80px;
-    max-width: 100%;
-    background-color: rgba(230, 209, 97, 0.9);
-    padding: 0 50px;
-    text-align: center;
-    left: 0;
-    right: 0;
-    margin-left: 0;
-}
-#bs-example-navbar-collapse-1 ul li a {
-    color: #000;
-    font-weight: bolder;
-    text-align: center;
-    text-transform: uppercase;
-}
+
    
 }
 
@@ -199,5 +174,82 @@
 	.social-wrapper .social-contact {
     margin-left: 52px;
 	}
+}
+
+/* =============================
+    NAVBAR TOGGLE BREAKPOINT
+    ============================ */
+@media (max-width: 1199px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+  #bs-example-navbar-collapse-1 {
+      position: absolute;
+      z-index: 99999999;
+      top: 80px;
+      max-width: 100%;
+      height: 60vh!important;
+      background-color: rgba(230, 209, 97, 0.9);
+      padding: 0 50px;
+      text-align: center;
+      left: 0;
+      right: 0;
+      margin-left: 0;
+  }
+  #bs-example-navbar-collapse-1 ul li a {
+      color: #000;
+      font-weight: bolder;
+      text-align: center;
+      text-transform: uppercase;
+  }
+  .navbar-nav>li>.dropdown-menu {
+    left: 0px;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    line-height: 
+}
+.divider{
+    display: none;
+}
+a.dropdown-toggle {
+    display: inline-block;
+    width: 60px;
+    margin: 0 auto;
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    background-color: transparent;
+}
 }
 

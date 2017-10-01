@@ -27,6 +27,22 @@
                             <li>
                                 <a href="{{'contatti'|page(false)}}">Contatti</a>
                             </li>
+                            
+                            <!-- **** -->
+                            <li>
+                                <div class="search-form">
+                                    <form class="navbar-form" action="/search" method="GET">
+                                        <div class="form-group">
+                                            <input value="" type="text" class="form-control form-control-search-el" placeholder="Cerca PA" name="term">
+                                            <div class=" form-control-submit-el">
+                                                <input class="form-control-submit-image-el" type="image" onclick="this.form.submit()" src="https://democracy.entopanlab.it/themes/pa33/assets/images/button-search.png" name="submit" alt="Cerca PA">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <!-- ***** -->
+                            
                             <li >
                                 <a href="{{'login'|page(false)}}">Accedi</a>
                             </li>
@@ -60,16 +76,7 @@
 
                     </div>
                     <!--/.nav-collapse -->
-                    <div class="search-form">
-                        <form class="navbar-form" action="/search" method="GET">
-                            <div class="form-group">
-                                <input value="" type="text" class="form-control form-control-search-el" placeholder="Cerca PA" name="term">
-                                <div class=" form-control-submit-el">
-                                    <input class="form-control-submit-image-el" type="image" onclick="this.form.submit()" src="https://democracy.entopanlab.it/themes/pa33/assets/images/button-search.png" name="submit" alt="Cerca PA">
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                    
 
                 </div>
             </nav>
