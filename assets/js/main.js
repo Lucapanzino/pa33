@@ -23,7 +23,13 @@ jQuery(document).ready(function ($) {
         }
     });
 
-
+    $('.navbar-toggle').on('click',function(){ 
+         $('.navbar-collapse').fadeToggle(1000);
+    });
+    
+    $('.dropdown-toggle').on('click',function(){ 
+         $('.dropdown-menu').fadeToggle(1000);
+    })
     
 
     /*---------------------------------------------*
