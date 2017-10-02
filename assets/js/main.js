@@ -31,8 +31,20 @@ jQuery(document).ready(function ($) {
          $('.dropdown-menu').fadeToggle(1000);
     });
     
+console.log('ok');
+
+    /*---------------------------------------------*
+     * Comment textarea
+     ---------------------------------------------*/    
     
-    
+     var text_max = 200;
+     $('#count_message').html(text_max + ' remaining');
+       $('.text-area').keyup(function() {
+       var text_length = $('.text-area').val().length;
+       var text_remaining = text_max - text_length;
+       $('.count_message').html(text_remaining + ' remaining');
+     });
+
 
     /*---------------------------------------------*
      * STICKY scroll

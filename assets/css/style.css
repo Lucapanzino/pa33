@@ -942,7 +942,8 @@ text-shadow: 0 2px 9px rgba(0,0,0,0.80);
 }
 
 .breadcrumb{
-    margin-bottom: 20px;
+    margin-top: 12px;
+    margin-bottom: 24px;
     background-color: rgba(255,255,255,0);
 }
 .form-control-submit-image-el {
@@ -1296,10 +1297,23 @@ label.light{
    border-radius: 3px;
 }
 
-.small-doc {
-    transform: scale(.5);
-    float: left;
-    margin: -50px 0;
+.small-doc>a>.community-edition{
+    padding: 20px 15px 0;
+}
+
+.small-doc>a>.community-edition>.doc-icons{
+    margin: 6px 0;
+    padding-top: 0;
+}
+.small-doc>a>.community-edition>i.fa-file-text{ 
+    float: left; 
+    margin-bottom: 0;
+}
+
+.small-doc>a>.community-edition>p { 
+    line-height: 16px;
+    text-align: justify;
+    margin-bottom: 2px;
 }
 
 /** =====================
@@ -1325,6 +1339,10 @@ label.light{
     background-color: rgba(236, 239, 241, 1.0);
 }
 
+.right-side{
+    display: flex; 
+}
+
 .doc-header .right-side h3{
     float: left;
     text-align: right;
@@ -1332,8 +1350,9 @@ label.light{
 .doc-header .right-side span{
     font-size: 4em;
     float: right;
+    margin-left: 8px;
     margin-top: 5px;
-        color: rgba(79, 140, 241, 1.0);
+    color: rgba(79, 140, 241, 1.0);
 }
 .logo-small{
     float: left;
@@ -1353,4 +1372,48 @@ label.light{
     max-width: 490px;
 }
 
+textarea {
+    resize: none;
+}
+textarea.form-control{
+    margin-bottom: 6px;   
+}
 
+.doc-icons{
+    margin-bottom: 36px;
+}
+
+.doc-icons p span i {
+    color: grey;
+    font-size: 2em;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+ 
+.doc-icons p span {
+    color: rgba(242, 58, 43, 1.0);
+    margin-right: 22px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.count_message {
+    width: 110px;
+    height: 30px;
+}
+
+
+.right-side-col h5{
+    font-weight: 500;
+}
+
+.right-side-col i{
+    margin-right: 6px;
+}
+
+.article-list {
+    margin-bottom: 4em;
+}
+
+.article-list h6{
+    color: rgba(86, 86, 86, 1.0);
+}

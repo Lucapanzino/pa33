@@ -10,7 +10,7 @@ is_hidden = 0
         <div class="container ">
             <div class="row">
 
-                <div class="col-xs-6 left-side">
+                <div class="col-xs-12 col-lg-6 left-side">
                     <div class="logo-small" style="background:url({{'assets/images/cz_logo.png'|theme}}) center;background-size:cover;"></div>
                     <h4>Comune di
                         <br>
@@ -18,8 +18,8 @@ is_hidden = 0
                     </h4>
                 </div>
 
-                <div class="col-xs-6 right-side">
-                    <h3>REGOLAMENTO TRASFERTE DEGLI<br/>AMMINISTRATORI</h3>
+                <div class="col-xs-12 col-lg-6 right-side">
+                    <h3>REGOLAMENTO TRASFERTE DEGLI AMMINISTRATORI</h3>
                     <span>
                         <i class="fa fa-file-text"></i>
                     </span>
@@ -29,22 +29,26 @@ is_hidden = 0
     </div>
 
     <div class="container">
+        
         {% partial 'breadcrumb/default' %}
+        
+        <div class="doc-icons">
+            <p>
+                <span>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>10 SEP 2017</span>
+                <span>
+                    <i class="fa fa-comments-o" aria-hidden="true"></i>
+                    5 Interventi</span>
+                <span>
+                    <i class="fa fa-download" aria-hidden="true"></i>
+                    2 Download</span>
+            </p>
+        </div>
+        
         <div class="row">
-            <!-- Right side -->
-            <div class="col-md-8">
-                <div class="doc-icons">
-                    <p>
-                        <span>
-                            <i class="fa fa-clock-o" aria-hidden="true"></i>10 SEP 2017</span>
-                        <span>
-                            <i class="fa fa-comments-o" aria-hidden="true"></i>
-                            5 Interventi</span>
-                        <span>
-                            <i class="fa fa-download" aria-hidden="true"></i>
-                            2 Download</span>
-                    </p>
-                </div>
+            <!-- Left side -->
+            <div class="col-md-8 left-side-col">
+                
 
                 <h3>DESCRIZIONE</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
@@ -54,7 +58,7 @@ is_hidden = 0
                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <div class="comments-container">
-                    {% for i in 0..2 %}
+                    {% for i in 0..1 %}
                         <div class="article-parent">
                             {% partial 'docWithComment/default'%}
                         </div>
@@ -67,27 +71,30 @@ is_hidden = 0
                 </div>
             </div>
             
-            <!-- End right side -->
+            <!-- End left side -->
 
-            <!-- Left side -->
-            <div class="col-md-4">
-                <h2>REGOLAMENTO TRASFERTE DEGLI AMMINISTRATORI</h2>
+            <!-- Right side -->
+            <div class="col-md-4 right-side-col">
+                <h5>REGOLAMENTO TRASFERTE DEGLI AMMINISTRATORI</h5>
                 <div class="article-list ">
                     {% for i in 0..5 %}
-                        <h3>
-                            <i class="fa fa-file-text"></i>Article name</h3>
-                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum ex eget porttitor sollicitudin.
-                        </h5>
+                    <a href="#">
+                        <h5>
+                            <i class="fa fa-file-text"></i>Article name</h5>
+                        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum ex eget porttitor sollicitudin.
+                        </h6>
                         <div class="clear"></div>
                         <hr>
+                    </a>    
                     {% endfor %}
                 </div>
 
                 <!-- Altri doc -->
 
-                <h4>ALTRI DOCUMENTI</h4>
+                
 
-                <div class="col-xs-12 text-center ">
+                <div class="col-xs-12 ">
+                    <h5>ALTRI DOCUMENTI</h5>
                     {% for i in 0..5 %}
                         <div class="small-doc">
                             {% partial 'documentoBox/default' %}
