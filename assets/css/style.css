@@ -1105,34 +1105,12 @@ label.light{
 	}
 
  /* Documento page */
- * {
-    margin: 0;
-   padding: 0;
-   -webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
-   box-sizing: border-box;
-}
 
-a {
-   color: #03658c;
-   text-decoration: none;
-}
-
-ul {
-   list-style-type: none;
-}
-
-body {
-   font-family: 'Roboto', Arial, Helvetica, Sans-serif, Verdana;
-   background: #dee1e3;
-}
-
-/** ====================
-* Lista de Comentarios
-=======================*/
 .comments-container {
    margin: 60px auto 15px;
    width: 768px;
+   background: rgba(236, 239, 241, 1.0);
+    padding: 25px 10px;
 }
 
 .comments-container h1 {
@@ -1150,44 +1128,9 @@ body {
    margin-top: 30px;
    position: relative;
 }
+ 
 
-/**
-* Lineas / Detalles
------------------------*/
-.comments-list:before {
-   content: '';
-   width: 2px;
-   height: 100%;
-   background: #c7cacb;
-   position: absolute;
-   left: 32px;
-   top: 0;
-}
-
-.comments-list:after {
-   content: '';
-   position: absolute;
-   background: #c7cacb;
-   bottom: 0;
-   left: 27px;
-   width: 7px;
-   height: 7px;
-   border: 3px solid #dee1e3;
-   -webkit-border-radius: 50%;
-   -moz-border-radius: 50%;
-   border-radius: 50%;
-}
-
-.reply-list:before, .reply-list:after {display: none;}
-.reply-list li:before {
-   content: '';
-   width: 60px;
-   height: 2px;
-   background: #c7cacb;
-   position: absolute;
-   top: 25px;
-   left: -55px;
-}
+ 
 
 
 .comments-list li {
@@ -1250,7 +1193,7 @@ body {
 * Caja del Comentario
 ---------------------------*/
 .comments-list .comment-box {
-   width: 680px;
+   width: 650px;
    float: right;
    position: relative;
    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
@@ -1278,7 +1221,7 @@ body {
 }
 
 .reply-list .comment-box {
-   width: 610px;
+   width: 580px;
 }
 .comment-box .comment-head {
    background: #FCFCFC;
@@ -1350,19 +1293,61 @@ body {
    border-radius: 3px;
 }
 
+.small-doc {
+    transform: scale(.5);
+    float: left;
+    margin: -50px 0;
+}
+
 /** =====================
 * Responsive
 ========================*/
 @media only screen and (max-width: 766px) {
    .comments-container {
-       width: 480px;
+       /*width: 480px;*/
+       width: 590px;
    }
-
-   .comments-list .comment-box {
-       width: 390px;
+   
+   .article-child .comments-list .comment-box { 
+       float: right;  
    }
-
-   .reply-list .comment-box {
-       width: 320px;
-   }
+   .comments-list .comment-box, .reply-list .comment-box {
+    width: 85%;
+} 
 }
+
+.doc-header {
+    height: 145px;
+        padding-top: 60px;
+    background-color: rgba(236, 239, 241, 1.0);
+}
+
+.doc-header .right-side h3{
+    float: left;
+    text-align: right;
+}
+.doc-header .right-side span{
+    font-size: 4em;
+    float: right;
+    margin-top: 5px;
+        color: rgba(79, 140, 241, 1.0);
+}
+.logo-small{
+    float: left;
+    height: 83px;
+    width: 60px;
+    margin: -20px 15px 0;
+}
+.article-child {
+    padding-left: 100px;
+}
+
+.article-child .comments-list .comment-box {
+    max-width: 560px;
+}
+
+.article-child .reply-list .comment-box {
+    max-width: 490px;
+}
+
+
