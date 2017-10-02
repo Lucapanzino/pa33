@@ -29,7 +29,9 @@ jQuery(document).ready(function ($) {
     
     $('.dropdown-toggle').on('click',function(){ 
          $('.dropdown-menu').fadeToggle(1000);
-    })
+    });
+    
+    
     
 
     /*---------------------------------------------*
