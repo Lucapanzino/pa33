@@ -1334,8 +1334,8 @@ label.light{
 }
 
 .doc-header {
-    height: 145px;
-        padding-top: 60px;
+    min-height: 145px;
+    padding-top: 60px;
     background-color: rgba(236, 239, 241, 1.0);
 }
 
